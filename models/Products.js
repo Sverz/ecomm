@@ -7,8 +7,9 @@ const ProductsSchema = new mongoose.Schema(
         categories: { type: Array },
         img: { type: String, required: true },
         size: { type: String },
-        color: { type: String },
+        color: { type: Array },
         price: { type: Number, required: true },
+        InStock: { type: Boolean, default: true },
     },
     { timestamps: true }
 );

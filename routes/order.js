@@ -1,9 +1,8 @@
 const Order = require("../models/Order");
-const {
-  verifyToken,
-  verifyTokenAndAuthorization,
-  verifyTokenAndAdmin,
-} = require("./verifyToken");
+const verifyToken = require("../middleware/verifyToken");
+const verifyTokenAndAuthorization = require("../middleware/verifyTokenAndAuthorization")
+const verifyTokenAndAdmin = require("../middleware/verifyTokenAndAdmin")
+
 
 const router = require("express").Router();
 
